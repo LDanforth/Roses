@@ -67,8 +67,7 @@
   
     function actualSales(){
         var daysWorked = document.getElementById('daysWorked').value;
-        
-       var bank = 200;        
+                
         document.getElementById('simulator').innerHTML = "";
         document.getElementById('final').innerHTML = "";
         
@@ -96,6 +95,7 @@
         
         document.getElementById('final').innerHTML += 'Bank Balance = ' + bank;
         
+        //This is to calc whether you made a profit for the year, basically anything over the starting balance of 200
         if (bank > 200){
             yearSales.push(bank-200);
             console.log(yearSales);
